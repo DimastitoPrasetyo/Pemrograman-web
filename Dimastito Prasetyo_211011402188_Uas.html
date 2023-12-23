@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UAS Pemrograman web</title>
+  <title img="fotoku terbaru.jpeg"></title>
+  <style>
+    /* CSS styles go here */
+    .dialog {
+  display: none; /* Sembunyikan dialog box secara default */
+  position: fixed; /* Posisikan dialog box secara fixed */
+  z-index: 1; /* Tempatkan dialog box di atas elemen lain */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Tambahkan scrollbar jika konten melebihi ukuran dialog box */
+  background-color: rgba(0, 0, 0, 0.4); /* Background semi-transparan */
+}
+
+.dialog-content {
+  background-color: #fff;
+  margin: 15% auto; /* Posisikan konten di tengah secara horizontal */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* Atur lebar konten */
+}
+
+#close-dialog {
+  background-color: #f44336; /* Warna merah untuk tombol tutup */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dimastito Prasetyo</h1>
+    <nav>
+      <ul>
+        <li><a href="mitsuya.jpeg">Home</a></li>
+        <li><a href="#skills">Profile</a></li>
+        <li><a href="#hobbies">About</a></li>
+        <li><a href="WhatsApp Video 2023-12-23 at 15.42.15.mp4">Galery</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>Selamat datang di Website Pribadi Saya</h2>
+      <p>Selamat datang di halaman utama website pribadi saya. Silakan jelajahi menu di atas untuk informasi lebih lanjut.</p>
+    </section>
+    <section id="skills">
+      <h2>Kemampuan</h2>
+      <ul>
+        <li>Berlari di atas air</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Memancing di siang hari</li>
+      </ul>
+    </section>
+    <section id="hobbies">
+      <h2>Hobi</h2>
+      <ul>
+        <li>Mancing</li>
+
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Kontak</h2>
+      <p>Email: titodimas@gmail..com</p>
+      <p>Telepon: 085728500597</p>
+      <p>Alamat: Shigansina District</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2021 | Dibuat dengan HTML dan CSS</p>
+  </footer>
+<table border="1">
+    <tr>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Kelas</th>
+    </tr>
+    <tr>
+        <td>Dimastito P</td>
+        <td>211011402188</td>
+        <td>05TPLE009</td>
+    </tr>
+
+</table>
+<iframe src="WhatsApp Video 2023-12-23 at 15.42.15.mp4" frameborder="0"></iframe>
+<button id="open-dialog">Buka Dialog</button>
+
+<div id="dialog" class="dialog">
+  <div class="dialog-content">
+    <h2>DIALOG BOX</h2>
+    <p>Konten dialog box dapat diletakkan di sini.</p>
+    <button id="close-dialog">Tutup</button>
+  </div>
+</div>
+<script>
+    const dialog = document.getElementById('dialog');
+const openButton = document.getElementById('open-dialog');
+const closeButton = document.getElementById('close-dialog');
+
+openButton.addEventListener('click', () => {
+  dialog.style.display = 'block'; /* Tampilkan dialog box */
+});
+
+closeButton.addEventListener('click', () => {
+  dialog.style.display = 'none'; /* Sembunyikan dialog box */
+});
+</script>
+</body>
+</html>
